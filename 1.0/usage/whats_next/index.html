@@ -8,13 +8,13 @@
       
       
       
-        <link rel="canonical" href="https://swe-agent.com/latest/usage/hello_world/">
+        <link rel="canonical" href="https://swe-agent.com/latest/usage/whats_next/">
       
       
-        <link rel="prev" href="../../installation/changelog/">
+        <link rel="prev" href="../batch_mode/">
       
       
-        <link rel="next" href="../cl_tutorial/">
+        <link rel="next" href="../../faq/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -22,7 +22,7 @@
     
     
       
-        <title>Hello world - SWE-agent documentation</title>
+        <title>What's next? - SWE-agent documentation</title>
       
     
     
@@ -107,7 +107,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#hello-world" class="md-skip">
+        <a href="#whats-next" class="md-skip">
           Skip to content
         </a>
       
@@ -163,7 +163,7 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Hello world
+              What's next?
             
           </span>
         </div>
@@ -713,19 +713,10 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
                 
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../hello_world/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -735,7 +726,6 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
   
 
       </a>
-      
     </li>
   
 
@@ -833,10 +823,19 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
                 
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../whats_next/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   <span class="md-ellipsis">
@@ -846,6 +845,7 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
   
 
       </a>
+      
     </li>
   
 
@@ -2103,7 +2103,7 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
 
 
   
-    <a href="https://github.com/SWE-agent/SWE-agent/edit/main/docs/usage/hello_world.md" title="Edit this page" class="md-content__button md-icon">
+    <a href="https://github.com/SWE-agent/SWE-agent/edit/main/docs/usage/whats_next.md" title="Edit this page" class="md-content__button md-icon">
       
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4zm10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1z"/></svg>
     </a>
@@ -2111,458 +2111,18 @@ SWE-agent 1.0 is the open source SOTA on SWE-bench lite! <a href="https://swe-ag
   
 
 
-<h1 id="hello-world">Hello world</h1>
-<div class="admonition abstract">
-<p class="admonition-title">Fix a github issue with SWE-agent</p>
-<p>In this tutorial, we will fix a github issue with SWE-agent using the command line interface.</p>
+<h1 id="whats-next">What's next?</h1>
+<p>Congratulations, this is currently the last tutorial!</p>
+<p>Here are some ideas for what to check out next: There are two more sections on this website:</p>
 <ul>
-<li>Make sure you have <a href="../../installation/">installed</a> SWE-agent and have a <a href="../../installation/keys/">language model</a> set up.</li>
-<li>We will be executing code in a Docker sandbox, so make sure you have docker installed (<a href="../../installation/tips/">docker troubleshooting</a>).
-  If you cannot run docker, skim this tutorial and see how you can run SWE-agent with cloud-based execution in the <a href="../cl_tutorial/">command line basics tutorial</a>.</li>
+<li><a href="../">User guides</a>: This covers selected topics in more detail, for example<ul>
+<li>What are all the different <a href="../cli/">subcommands</a> of <code>sweagent</code>?</li>
+<li>How to <a href="../../config/">configure swe-agent</a>?</li>
+<li>What's the main <a href="../../background/architecture/">architecture</a> of SWE-agent?</li>
 </ul>
-</div>
-<p>After installing SWE-agent, you have the <code>sweagent</code> command available. Run <code>sweagent --help</code> to see the list of subcommands.
-The most important ones are</p>
-<ul>
-<li><code>sweagent run</code>: Run SWE-agent on a single problem statement. This is covered on this page and for slightly more advanced examples in the <a href="../cl_tutorial/">command line basics tutorial</a>.</li>
-<li><code>sweagent run-batch</code>: Run SWE-agent on a list of problem statements. This is what you would use for benchmarking, or when
-  working with a larger set of historic issues. Covered in the <a href="../batch_mode/">batch mode tutorial</a>.</li>
+</li>
+<li><a href="../../reference/">API reference</a> for complete lists of all configuration options.</li>
 </ul>
-<p>In this tutorial, we will focus on the <code>run</code> subcommand.</p>
-<p>Let's start with an absolutely trivial example and solve an issue about a simple syntax error (<a href="https://github.com/SWE-agent/test-repo/issues/1"><code>swe-agent/test-repo #1</code></a>)</p>
-<div class="highlight"><pre><span></span><code>sweagent<span class="w"> </span>run<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--agent.model.name<span class="o">=</span>claude-3-5-sonnet-20241022<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--agent.model.per_instance_cost_limit<span class="o">=</span><span class="m">2</span>.00<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--env.repo.github_url<span class="o">=</span>https://github.com/SWE-agent/test-repo<span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>--problem_statement.github_url<span class="o">=</span>https://github.com/SWE-agent/test-repo/issues/1
-</code></pre></div>
-<p>The example above uses the <code>Claude 3.5 Sonnet</code> model from Anthropic. Alternatively, you can for example use <code>GPT-4o</code> (from OpenAI)
-by setting <code>--angent.model.name=gpt-4o</code>.
-In order to use it, you need to add your keys to the environment:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span>&lt;your<span class="w"> </span>key&gt;
-<span class="nb">export</span><span class="w"> </span><span class="nv">OPENAI_API_KEY</span><span class="o">=</span>&lt;your<span class="w"> </span>key&gt;
-</code></pre></div>
-<p>alternatively, you can create a <code>.env</code> file in your working directory and put your keys in there like so:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">ANTHROPIC_API_KEY</span><span class="o">=</span>&lt;your<span class="w"> </span>key&gt;
-<span class="nv">OPENAI_API_KEY</span><span class="o">=</span>&lt;your<span class="w"> </span>key&gt;
-</code></pre></div>
-<p>We should support all models that you can think of.</p>
-<div class="admonition tip">
-<p class="admonition-title">Models and keys</p>
-<p>Read more about configuring <a href="../../installation/keys/">models and API keys</a>.</p>
-</div>
-<details>
-<summary>Output</summary>
-
-<div class="highlight"><pre><span></span><code> INFO      This is SWE-agent version 0.7.0 (53c0e1a51aacd6ddfd3eb377a694e150e9b471ff) with SWE-ReX 1.0.1 (deaf1b702fc534a0164eeb4018f7779910a4910c).
-🔧 INFO     Loading default config from /Users/fuchur/Documents/24/git_sync/SWE-agent/config/default.yaml, because no other config file is specified. Specify --no_config_file to
-            disable this.
-🔧 WARNING  demonstration_template is ignored when put_demos_in_history is True
-🔧 INFO     Setting problem statement based on github issue url
-🔧 INFO     Loaded environment variables from /Users/fuchur/Documents/24/git_sync/SWE-agent/.env
-🔧 WARNING  demonstration_template is ignored when put_demos_in_history is True
-🏃 INFO     Starting environment
-🦖 DEBUG    Found free port 60661
-🦖 INFO     Starting container python3.11-0bc626f0-e72a-4faa-9b49-0323d0f1ab87 with image python:3.11 serving on port 60661
-🦖 DEBUG    Command: &quot;docker run --rm -p 60661:8000 --name python3.11-0bc626f0-e72a-4faa-9b49-0323d0f1ab87 python:3.11 /bin/sh -c &#39;swerex-remote --auth-token
-            3f979423-c1fb-40f9-8a44-35256ee60f0a || (python3 -m pip install pipx &amp;&amp; python3 -m pipx ensurepath &amp;&amp; pipx run swe-rex --auth-token
-            3f979423-c1fb-40f9-8a44-35256ee60f0a)&#39;&quot;
-🦖 INFO     Starting runtime at 60661
-🦖 INFO     Runtime started in 10.21s
-🌱 INFO     Environment Initialized
-🌱 DEBUG    Resetting repository SWE-agent__test-repo to commit HEAD
-🏃 INFO     Running agent
-🤠 INFO     Trajectory will be saved to
-            /Users/fuchur/Documents/24/git_sync/SWE-agent/trajectories/fuchur/default__claude-3-5-sonnet-20241022__t-0.00__p-1.00__c-2.00___SWE-agent__test-repo-i1/SWE-agent__test-
-            repo-i1/SWE-agent__test-repo-i1.traj
-🦖 DEBUG    Uploading file from /Users/fuchur/Documents/24/git_sync/SWE-agent/tools/registry to /root/tools/registry
-🦖 DEBUG    Created zip file at /var/folders/g3/1y2_hl1j16scls01cxqm76s80000gn/T/tmpswoslekq/zipped_transfer.zip
-🦖 DEBUG    Uploading file from /Users/fuchur/Documents/24/git_sync/SWE-agent/tools/defaults to /root/tools/defaults
-🦖 DEBUG    Created zip file at /var/folders/g3/1y2_hl1j16scls01cxqm76s80000gn/T/tmpf385jdxb/zipped_transfer.zip
-🦖 DEBUG    Uploading file from /Users/fuchur/Documents/24/git_sync/SWE-agent/tools/search to /root/tools/search
-🦖 DEBUG    Created zip file at /var/folders/g3/1y2_hl1j16scls01cxqm76s80000gn/T/tmppjat9qec/zipped_transfer.zip
-🦖 DEBUG    Uploading file from /Users/fuchur/Documents/24/git_sync/SWE-agent/tools/edit_replace to /root/tools/edit_replace
-🦖 DEBUG    Created zip file at /var/folders/g3/1y2_hl1j16scls01cxqm76s80000gn/T/tmpiwzg_8ex/zipped_transfer.zip
-🦖 DEBUG    Uploading file from /Users/fuchur/Documents/24/git_sync/SWE-agent/tools/submit to /root/tools/submit
-🦖 DEBUG    Created zip file at /var/folders/g3/1y2_hl1j16scls01cxqm76s80000gn/T/tmpdruv408v/zipped_transfer.zip
-🧰 INFO     Resetting tools
-🤠 INFO     SYSTEM (main)
-            SETTING: You are an autonomous programmer, and you&#39;re working directly in the command line with a special interface.
-
-            The special interface consists of a file editor that shows you 100 lines of a file at a time.
-            In addition to typical bash commands, you can also use specific commands to help you navigate and edit files.
-            To call a command, you need to invoke it with a function call/tool call.
-
-            Please note that THE EDIT COMMAND REQUIRES PROPER INDENTATION.
-
-            For example, if you are looking at this file:
-
-            def fct():
-                print(&quot;Hello world&quot;)
-
-            and you want to edit the file to read:
-
-            def fct():
-                print(&quot;Hello&quot;)
-                print(&quot;world&quot;)
-
-            you search string should be `Hello world` and your replace string should be `&quot;Hello&quot;\n    print(&quot;world&quot;)`
-            (note the extra spaces before the print statement!).
-
-            You could also get the same result by search for `    print(&quot;Hello world&quot;)` and replace with `    print(&quot;Hello&quot;)\n    print(&quot;world&quot;)`.
-
-            RESPONSE FORMAT:
-            Your shell prompt is formatted as follows:
-            (Open file: &lt;path&gt;)
-            (Current directory: &lt;cwd&gt;)
-            bash-$
-
-            First, you should _always_ include a general thought about what you&#39;re going to do next.
-            Then, for every response, you must include exactly _ONE_ tool call/function call.
-
-            Remember, you should always include a _SINGLE_ tool call/function call and then wait for a response from the shell before continuing with more discussion and commands.
-            Everything you include in the DISCUSSION section will be saved for future reference.
-            If you&#39;d like to issue two commands at once, PLEASE DO NOT DO THAT! Please instead first submit just the first tool call, and then after receiving a response you&#39;ll be
-            able to issue the second .
-            Note that the environment does NOT support interactive session commands (e.g. python, vim), so please do not invoke them.
-🤠 INFO     DEMONSTRATION:
-            /Users/fuchur/Documents/24/git_sync/SWE-agent/trajectories/demonstrations/replay__marshmallow-code__marshmallow-1867__function_calling_replace__install-1/marshmallow-co
-            de__marshmallow-1867.traj
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;n/a&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            We&#39;re currently solving the following issue within our repository. Here&#39;s the issue text:
-            ISSUE:
-            SyntaxError: invalid syntax
-            I&#39;m running `missing_colon.py` as follows:
-
-            ```python
-            division(23, 0)
-            ```
-
-            but I get the following error:
-
-            ```
-              File &quot;/Users/fuchur/Documents/24/git_sync/swe-agent-test-repo/tests/./missing_colon.py&quot;, line 4
-                def division(a: float, b: float) -&gt; float
-                                                         ^
-            SyntaxError: invalid syntax
-            ```
-
-
-            INSTRUCTIONS:
-            Now, you&#39;re going to solve this issue on your own. Your terminal session has started and you&#39;re in the repository&#39;s root directory. You can use any bash commands or the
-            special interface to help you. Edit all the files you need to and run any checks or tests that you want.
-            Remember, YOU SHOULD ALWAYS INCLUDE EXACTLY ONE TOOL CALL/FUNCTION CALL PER RESPONSE.
-            When you&#39;re satisfied with all of the changes you&#39;ve made, you can submit your changes to the code base by simply running the submit command.
-            Note however that you cannot use any interactive session commands (e.g. python, vim) in this environment, but you can write scripts and run them. E.g. you can write a
-            python script and then run it with the python command.
-
-            NOTE ABOUT THE EDIT COMMAND: Indentation really matters! When editing a file, make sure to insert appropriate indentation before each line!
-
-            GENERAL IMPORTANT TIPS:
-
-            1. If you run a command and it doesn&#39;t work, try running a different command. A command that did not work once will not work the second time unless you modify it!
-
-            2. If you open a file and need to get to an area around a specific line that is not in the first 100 lines, say line 583, don&#39;t just use the scroll_down command
-            multiple times. Instead, use the goto 583 command. It&#39;s much quicker.
-
-            3. If the bug reproduction script requires inputting/reading a specific file, such as buggy-input.png, and you&#39;d like to understand how to input that file, conduct a
-            search in the existing repo code, to see whether someone else has already done that. Do this by running the command: find_file &quot;buggy-input.png&quot; If that doesn&#39;t work,
-            use the linux &#39;find&#39; command.
-
-            4. Always make sure to look at the currently open file and the current working directory (which appears right after the currently open file). The currently open file
-            might be in a different directory than the working directory! Note that some commands, such as &#39;create&#39;, open files, so they might change the current open file.
-
-            5. When editing files, it is easy to accidentally to write code with incorrect indentation or make other mistakes. Always check the code after you issue an edit to make
-            sure that it reflects what you wanted to accomplish. If it didn&#39;t, issue another command to fix it.
-
-            6. When editing files, first explain the code you want to edit and why it is causing the problem. Then explain the edit you want to make and how it fixes the problem.
-            Explain how the edit does not break existing functionality.
-
-            7. Do not try to install any packages with `pip`, `conda`, or any other way. This will usually not work. If the environment is not set up correctly, try to fix the
-            issue without executing python code or running any tests that require the package installed.
-
-            STRATEGY:
-
-            1. Always start by trying to replicate the bug that the issues discusses.
-              If the issue includes code for reproducing the bug, we recommend that you re-implement that in your environment, and run it to make sure you can reproduce the bug.
-              Then start trying to fix it.
-
-              If the bug reproduction script does not print anything when it successfully runs, we recommend adding a print(&quot;Script completed successfully, no errors.&quot;) command at
-            the end of the file,
-              so that you can be sure that the script indeed ran fine all the way through.
-
-            2. Locate relevant code using the find and search commands. `open` the file you want to edit.
-
-            3. Use the `edit` command to perform edits.
-
-            4. When you think you&#39;ve fixed the bug, re-run the bug reproduction script to make sure that the bug has indeed been fixed.
-
-            5. Create additional tests to verify the fix in a style similar to the existing reproduction script. In particular, make sure to test edge cases.
-               If you find any issues, go back to the file you edited and perform further edits.
-
-            (Open file: n/a)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 1 =========================
-🤖 DEBUG    input_tokens=7,862, output_tokens=36, instance_cost=0.04, cost=0.04
-🤖 DEBUG    total_tokens_sent=7,862, total_tokens_received=36, total_cost=0.04, total_api_calls=1
-🤠 INFO     💭 THOUGHT
-            Let&#39;s start by finding the `missing_colon.py` file that&#39;s mentioned in the issue. Based on the error message, it should be in the `tests` directory.
-
-            🎬 ACTION
-            find_file missing_colon.py tests
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;n/a&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            Found 1 matches for &quot;missing_colon.py&quot; in /SWE-agent__test-repo/tests:
-            /SWE-agent__test-repo/tests/missing_colon.py
-            (Open file: n/a)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 2 =========================
-🤖 DEBUG    input_tokens=7,971, output_tokens=11, instance_cost=0.07, cost=0.04
-🤖 DEBUG    total_tokens_sent=15,833, total_tokens_received=47, total_cost=0.07, total_api_calls=2
-🤠 INFO     💭 THOUGHT
-            Now let&#39;s open the file to see its contents:
-
-            🎬 ACTION
-            open &quot;tests/missing_colon.py&quot;
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/tests/missing_colon.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            [File: tests/missing_colon.py (10 lines total)]
-            1:#!/usr/bin/env python3
-            2:
-            3:
-            4:def division(a: float, b: float) -&gt; float
-            5:    return a/b
-            6:
-            7:
-            8:if __name__ == &quot;__main__&quot;:
-            9:    print(division(123, 15))
-            10:
-            (Open file: /SWE-agent__test-repo/tests/missing_colon.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 3 =========================
-🤖 DEBUG    input_tokens=8,103, output_tokens=48, instance_cost=0.11, cost=0.04
-🤖 DEBUG    total_tokens_sent=23,936, total_tokens_received=95, total_cost=0.11, total_api_calls=3
-🤠 INFO     💭 THOUGHT
-            I can see the problem. The function definition on line 4 is missing a colon (`:`) after the return type annotation. In Python, all function definitions must end with a
-            colon. Let&#39;s fix this by adding the missing colon.
-
-            🎬 ACTION
-            edit &#39;def division(a: float, b: float) -&gt; float&#39; &#39;def division(a: float, b: float) -&gt; float:&#39;
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/tests/missing_colon.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            Text replaced. Please review the changes and make sure they are correct:
-
-            1. The edited file is correctly indented
-            2. The edited file does not contain duplicate lines
-            3. The edit does not break existing functionality
-
-            Edit the file again if necessary.
-            [File: /SWE-agent__test-repo/tests/missing_colon.py (10 lines total)]
-            1:#!/usr/bin/env python3
-            2:
-            3:
-            4:def division(a: float, b: float) -&gt; float:
-            5:    return a/b
-            6:
-            7:
-            8:if __name__ == &quot;__main__&quot;:
-            9:    print(division(123, 15))
-            10:
-            (Open file: /SWE-agent__test-repo/tests/missing_colon.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 4 =========================
-🤖 DEBUG    input_tokens=8,356, output_tokens=39, instance_cost=0.15, cost=0.04
-🤖 DEBUG    total_tokens_sent=32,292, total_tokens_received=134, total_cost=0.15, total_api_calls=4
-🤠 INFO     💭 THOUGHT
-            The changes look good. The colon has been added after the return type annotation, and the indentation is correct. Let&#39;s test the file by running it with Python to make
-            sure it works now:
-
-            🎬 ACTION
-            python tests/missing_colon.py
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/tests/missing_colon.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            8.2
-            (Open file: /SWE-agent__test-repo/tests/missing_colon.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 5 =========================
-🤖 DEBUG    input_tokens=8,444, output_tokens=37, instance_cost=0.19, cost=0.04
-🤖 DEBUG    total_tokens_sent=40,736, total_tokens_received=171, total_cost=0.19, total_api_calls=5
-🤠 INFO     💭 THOUGHT
-            The file now runs successfully and produces the expected output (123/15 = 8.2). Let&#39;s also test the division with zero case that was mentioned in the issue description:
-
-            🎬 ACTION
-            create test_division.py
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/test_division.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            [File: test_division.py (1 lines total)]
-            1:
-            (Open file: /SWE-agent__test-repo/test_division.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 6 =========================
-🤖 DEBUG    input_tokens=8,535, output_tokens=14, instance_cost=0.23, cost=0.04
-🤖 DEBUG    total_tokens_sent=49,271, total_tokens_received=185, total_cost=0.23, total_api_calls=6
-🤠 INFO     💭 THOUGHT
-            Let&#39;s create a test script that imports and tests the division function:
-
-            🎬 ACTION
-            insert &#39;from tests.missing_colon import division
-
-            try:
-                result = division(23, 0)
-                print(&quot;This should not be printed - division by zero should raise an error&quot;)
-            except ZeroDivisionError:
-                print(&quot;Test passed: Division by zero correctly raises ZeroDivisionError&quot;)
-
-            # Test normal case
-            result = division(10, 2)
-            print(f&quot;10/2 = {result}&quot;)&#39;
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/test_division.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            [File: /SWE-agent__test-repo/test_division.py (12 lines total)]
-            1:
-            2:from tests.missing_colon import division
-            3:
-            4:try:
-            5:    result = division(23, 0)
-            6:    print(&quot;This should not be printed - division by zero should raise an error&quot;)
-            7:except ZeroDivisionError:
-            8:    print(&quot;Test passed: Division by zero correctly raises ZeroDivisionError&quot;)
-            9:
-            10:# Test normal case
-            11:result = division(10, 2)
-            12:print(f&quot;10/2 = {result}&quot;)
-            (Open file: /SWE-agent__test-repo/test_division.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 7 =========================
-🤖 DEBUG    input_tokens=8,754, output_tokens=16, instance_cost=0.27, cost=0.04
-🤖 DEBUG    total_tokens_sent=58,025, total_tokens_received=201, total_cost=0.27, total_api_calls=7
-🤠 INFO     💭 THOUGHT
-            Let&#39;s run the test script to verify both normal division and division by zero:
-
-            🎬 ACTION
-            python test_division.py
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/test_division.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            Test passed: Division by zero correctly raises ZeroDivisionError
-            10/2 = 5.0
-            (Open file: /SWE-agent__test-repo/test_division.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 8 =========================
-🤖 DEBUG    input_tokens=8,731, output_tokens=57, instance_cost=0.31, cost=0.04
-🤖 DEBUG    total_tokens_sent=66,756, total_tokens_received=258, total_cost=0.31, total_api_calls=8
-🤠 INFO     💭 THOUGHT
-            The tests pass successfully. The function now works as expected:
-            1. It handles normal division correctly
-            2. It properly raises a ZeroDivisionError when dividing by zero
-            3. The syntax error is fixed
-
-            Let&#39;s clean up our test file since we don&#39;t need it anymore:
-
-            🎬 ACTION
-            rm test_division.py
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/test_division.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     🤖 MODEL INPUT
-            Your command ran successfully and did not produce any output.
-            (Open file: /SWE-agent__test-repo/test_division.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     ========================= STEP 9 =========================
-🤖 DEBUG    input_tokens=8,679, output_tokens=7, instance_cost=0.35, cost=0.04
-🤖 DEBUG    total_tokens_sent=75,435, total_tokens_received=265, total_cost=0.35, total_api_calls=9
-🤠 INFO     💭 THOUGHT
-            Now we can submit our changes:
-
-            🎬 ACTION
-            submit
-🧰 DEBUG    Retrieved state from environment: {&#39;open_file&#39;: &#39;/SWE-agent__test-repo/test_division.py&#39;, &#39;working_dir&#39;: &#39;/SWE-agent__test-repo&#39;}
-🤠 INFO     Found submission:
-            diff --git a/tests/missing_colon.py b/tests/missing_colon.py
-            index 20edef5..5857437 100755
-            --- a/tests/missing_colon.py
-            +++ b/tests/missing_colon.py
-            @@ -1,7 +1,7 @@
-             #!/usr/bin/env python3
-
-
-            -def division(a: float, b: float) -&gt; float
-            +def division(a: float, b: float) -&gt; float:
-                 return a/b
-
-
-
-🤠 INFO     🤖 MODEL INPUT
-
-            diff --git a/tests/missing_colon.py b/tests/missing_colon.py
-            index 20edef5..5857437 100755
-            --- a/tests/missing_colon.py
-            +++ b/tests/missing_colon.py
-            @@ -1,7 +1,7 @@
-             #!/usr/bin/env python3
-
-
-            -def division(a: float, b: float) -&gt; float
-            +def division(a: float, b: float) -&gt; float:
-                 return a/b
-
-
-
-            (Open file: /SWE-agent__test-repo/test_division.py)
-            (Current directory: /SWE-agent__test-repo)
-            bash-$
-🤠 INFO     Trajectory saved to
-            /Users/fuchur/Documents/24/git_sync/SWE-agent/trajectories/fuchur/default__claude-3-5-sonnet-20241022__t-0.00__p-1.00__c-2.00___SWE-agent__test-repo-i1/SWE-agent__test-
-            repo-i1/SWE-agent__test-repo-i1.traj
-╭──────────────────────────── 🎉 Submission successful 🎉 ────────────────────────────╮
-│ SWE-agent has produced a patch that it believes will solve the issue you submitted! │
-│ Use the code snippet below to inspect or apply it!                                  │
-╰─────────────────────────────────────────────────────────────────────────────────────╯
-
- # The patch has been saved to your local filesystem at:
- PATCH_FILE_PATH=&#39;/Users/fuchur/Documents/24/git_sync/SWE-agent/trajectories/fuchur/default__claude-3-5-sonnet-20241022__t-0.00__p-1.00__c-2.00___SWE-agent__test-repo-i1/SWE-agent
- test-repo-i1.patch&#39;
- # Inspect it:
- cat &quot;${PATCH_FILE_PATH}&quot;
- # Apply it to a local repository:
- cd &lt;your local repo root&gt;
- git apply &quot;${PATCH_FILE_PATH}&quot;
-
-🏃 INFO     Done
-🌱 INFO     Beginning environment shutdown...
-🦖 DEBUG    Ensuring deployment is stopped because object is deleted
-</code></pre></div>
-</details>
-
-<p>As you can see, the command line options are hierarchical. At the top level, there are three important sections:</p>
-<ul>
-<li><code>problem_statement</code>: What problem are you trying to solve?</li>
-<li><code>agent</code>: How do you want to solve the problem? This includes setting up the LM with <code>--agent.model</code>.</li>
-<li><code>env</code>: What is the environment in which the problem statement should be solved?
-  This includes setting the repository/folder with the source files with <code>--env.repo</code>, as well as docker images and other dependencies.
-  This will also control where the code is executed (in a local container or in the cloud).</li>
-</ul>
-<p>Watching the output, you can notice several stages:</p>
-<ol>
-<li>Setting up the <strong>deployment</strong>: SWE-agent lets LMs execute actions in sandboxed environments. It can run these environments
-   in docker containers (default), on modal, AWS fargate, or directly on your computer (not recommended).
-   When the deployment starts, you will notice a "starting runtime" message that takes a few seconds. The runtime is
-   what is executing the commands within your deployment.
-   Deployments are managed by a package called <a href="https://swe-rex.com/latest/"><code>SWE-ReX</code></a>.</li>
-<li>Setting up <a href="../../config/tools/"><strong>tools</strong></a>: The tools that you specified are copied and installed within the environment.</li>
-<li><strong>System and instance prompts</strong>: The initial instructions are shown to the LM. They are fully <a href="../../config/templates/">configurable</a>.</li>
-<li><strong>Main loop</strong>: The LM starts to suggest and execute actions.</li>
-<li><strong>Submission</strong>: The LM calls <code>submit</code> and we extract the patch (i.e., the changes to the source code that solve the problem).</li>
-</ol>
-<p>The complete details of the run are saved as a <a href="../trajectories/">"trajectory" file</a>). They can also be turned into new <a href="../../config/demonstrations/">demonstrations</a> together with other log and output files.</p>
-<p>Wetted your appetite? Head over to the <a href="../cl_tutorial/">command line basics tutorial</a> to learn more about the options.</p>
 
 
 
@@ -2600,7 +2160,7 @@ In order to use it, you need to add your keys to the environment:</p>
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../installation/changelog/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Changelog">
+          <a href="../batch_mode/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Batch mode">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -2610,20 +2170,20 @@ In order to use it, you need to add your keys to the environment:</p>
                 Previous
               </span>
               <div class="md-ellipsis">
-                Changelog
+                Batch mode
               </div>
             </div>
           </a>
         
         
           
-          <a href="../cl_tutorial/" class="md-footer__link md-footer__link--next" aria-label="Next: Command line basics">
+          <a href="../../faq/" class="md-footer__link md-footer__link--next" aria-label="Next: FAQ">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Command line basics
+                FAQ
               </div>
             </div>
             <div class="md-footer__button md-icon">
