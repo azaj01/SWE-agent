@@ -14,7 +14,7 @@
         <link rel="prev" href="../batch_mode/">
       
       
-        <link rel="next" href="../whats_next/">
+        <link rel="next" href="../adding_custom_tools/">
       
       
       <link rel="icon" href="../../assets/favicon.ico">
@@ -698,6 +698,8 @@
       
         
       
+        
+      
     
     
     
@@ -934,6 +936,29 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../adding_custom_tools/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Adding custom tools
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -2311,7 +2336,11 @@
 </ul>
 </div>
 <h2 id="current-competitive-configurations">Current competitive configurations</h2>
-<p>We recently used two configurations for SWE-bench submissions</p>
+<div class="admonition hint">
+<p class="admonition-title">Most recent configs</p>
+<p>You can find all benchmark submission configs <a href="https://github.com/SWE-agent/SWE-agent/tree/main/config/benchmarks">here</a></p>
+</div>
+<p>Examples of configurations for SWE-bench submissions:</p>
 <ul>
 <li><a href="https://github.com/SWE-agent/SWE-agent/blob/main/config/250225_anthropic_filemap_simple_review.yaml">250225_anthropic_filemap_simple_review.yaml</a>:
   This is our current default one-attempt config. It uses <code>claude-3-7-sonnet-20250219</code>.</li>
@@ -2328,7 +2357,7 @@ default agent. In particular, supplying options like <code>--agent.model.name</c
 error messages. Take a look at the above configuration file to see the structure!</p>
 </div>
 <p>You can find the command with which to run each config at the top of the config file.</p>
-<p>In order to run on multiple workers with Claude, you need to use multiple API keys in order to have enough cache break points
+<p>In order to run on multiple workers with Claude, you need to use multiple API keys in order to have enough cache break points.
 For this, please set the following environment variable before running</p>
 <div class="highlight"><pre><span></span><code><span class="c1"># concatenate your keys</span>
 <span class="nb">export</span><span class="w"> </span><span class="nv">CLAUDE_API_KEY_ROTATION</span><span class="o">=</span><span class="s2">&quot;KEY1:::KEY2:::KEY3&quot;</span>
@@ -2607,13 +2636,13 @@ You can use a sentinel script like the following to clean them up periodically
         
         
           
-          <a href="../whats_next/" class="md-footer__link md-footer__link--next" aria-label="Next: What&#39;s next?">
+          <a href="../adding_custom_tools/" class="md-footer__link md-footer__link--next" aria-label="Next: Adding custom tools">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                What's next?
+                Adding custom tools
               </div>
             </div>
             <div class="md-footer__button md-icon">
